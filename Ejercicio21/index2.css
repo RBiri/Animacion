@@ -1,0 +1,43 @@
+body{
+    background-image: url("img/barranco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#caida{
+    position: absolute;
+    scale: 2;
+    bottom: 7%;
+}
+
+.corredor{
+    animation: 5s 1 caer;
+}
+.herido{
+    left: 55%;
+    bottom: 20%;
+    height: 240px;
+    width: 200px;
+}
+
+@keyframes caer{
+    0% {
+        left: 0%;
+    }
+    50%{
+        rotate:0deg;
+        left: 40%;
+        bottom: 45%;
+    }
+    100%{
+        rotate:630deg;
+        left: 55%;
+        bottom: 5%;
+    }
+    /* 100% {
+        rotate:0deg;
+        left: 110%;
+    } */
+}

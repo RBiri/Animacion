@@ -1,0 +1,25 @@
+body{
+    background-image: url("img/camino.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#corredor{
+    position: absolute;
+    scale: 2;
+    bottom: 7%;
+}
+
+.corredor{
+    animation: 5s 1 correr;
+}
+
+@keyframes correr{
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 110%;
+    }
+}
